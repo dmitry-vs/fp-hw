@@ -24,8 +24,8 @@ export type SomeArray = Array<number | string>;
 export const originalArrayToExpectedArray = (
   originalArray: SomeArray
 ): SomeArray => {
-  const [, , ...rest] = originalArray;
-  return ['two', ...rest, 5];
+  const [, , third, fourth] = originalArray;
+  return ['two', third, fourth, 5];
 };
 
 // Задание 3

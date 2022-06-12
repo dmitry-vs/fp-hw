@@ -23,7 +23,7 @@ export type QsObj = Record<string, string | number | boolean | object>;
 export const createQs = compose(
   concat('?'),
   join('&'),
-  map(([k, v]) => `${k}=${v}`),
+  map(join('=')),
   toPairs
 );
 
