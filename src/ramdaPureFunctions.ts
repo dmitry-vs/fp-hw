@@ -28,5 +28,6 @@ export const createQs = compose(
 );
 
 // Задание 3
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 export const parseQs = compose(fromPairs, map(split('=')), split('&'), drop(1));
